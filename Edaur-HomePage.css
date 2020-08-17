@@ -1,21 +1,103 @@
+.slider {
+        width: 500px;
+        height: 300px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        height: 300px;
+        background-color: black;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+        text-align: center !important;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        text-align: center;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: white;
+      }
+
+
+.contents{
+	height:500px;
+	margin-top:100px;
+}
+
+.section-title{
+	border-bottom: 2px solid #dee7ec;
+	font-size: 20px;
+	padding-bottom: 2px;
+	margin-bottom: 50px;
+  font-style: 'Bolt Sans';
+}
+
+.contents-item{
+	float:left;
+	margin-right:40px;
+	padding-left: 30px;
+}
+
+.contents-item p{
+	font-size:15px;
+	margin-top:30px;
+  font-style: 'Bolt Sans';
+}
+
+
+
+
 h1 {
 	text-align: center !important;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
+  font-style: 'Bolt Sans';
 	font-size: xx-large;
 	border: 5px solid #dee7ec;
+	background-color: #2F5167;
+  color: #FFFFFF;
 }
 
 p1 {
-	font-family: 'Lato', sans-serif;
-	font-size: larger;
+	font-style: 'Bolt Sans';
+	font-size: 15px;
 	text-align: center;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 body{
-	background-color: #F0F8FF;
+	background-color: #FFB48F;
+  font-style: 'Bolt Sans';
 }
 
 li{
@@ -23,11 +105,12 @@ li{
 }
 
 .header{
-	background-color: #000000;
-	color:#fff;
-	height: 90px;
+	background-color: #2F5167;
+	color: #fff;
+	height: 110px;
 	text-align: center;
 	border-radius: 4px;
+  font-style: 'Bolt Sans';
 }
 
 .headerlogo{
@@ -35,6 +118,10 @@ li{
 	font-size:56px;
 	font-weight: bold;
 	padding:40px 40px;
+}
+
+.edaur-photo{
+	float:left
 }
 
 .header-list li{
@@ -53,13 +140,17 @@ div.col-lg-4 col-md-6 {
 	padding: 1em;
 }
 
+div.col-lg-4 col-md-4 col-sm-6 col-xs-12{
+  padding:1em;
+
+}
 #slbr {
 	margin: 2em !important;
 }
 
 textarea {
 	color: black;
-	padding: 100px 100px 100px 100px;
+	padding:15px 15px 15px 15px;
 }
 
 input {
@@ -74,23 +165,98 @@ input {
 	padding-right: 2em;
 	padding-left: 2em;
 	text-align: center;
+  font-style: 'Bolt Sans';
 }
 
-#contactus {
-	padding: 2em;
-}
+
 
 #followus{
 	padding-right: 2em;
 	padding-left: 2em;
-	text-align: center;
+	text-align: center !important;
+  font-style: 'Bolt Sans';
+}
+
+.label{
+  text-align: center;
+  font-style: 'Bolt Sans';
+}
+
+.text{
+  text-align: center;
+  font-style: 'Bolt Sans';
 }
 
 h2{
 	text-align: center !important;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
-	border-top: 2px solid #dee7ec;
+	font-style: 'Bolt Sans';
+	border-top: 1px solid #dee7ec;
+}
+
+.footer{
+	background-color: #2F5167;
+	color: #FFF;
+	height: 450px;
+	padding:20px;
+  font-style: 'Bolt Sans';
+}
+
+.footer-logo{
+	float:left;
+	font-size:32px;
+  font-style: 'Bolt Sans';
+}
+
+.footer-list{
+	float:right;
+}
+
+.footer-list li{
+	padding-bottom:20px;
+  font-style: 'Bolt Sans';
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
 
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedln {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #3B5998;
+  color: white;
+}
